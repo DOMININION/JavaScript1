@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>image introduction</title>
+    </head>
+    <body>
+        <span><a href="index.html" style="margin-bottom: 50px ;">Back to Homepage</a></span>
+        <h1>JavaScript Can Change Image</h1>
+        <img id="myImage" onclick="changeImage('myImage')" src="index gf.jpg"
+        width="100" height="180">
+        <p> click the light bulb to turn on/off the light.{click on the image to change the image}</p>
+        <script>
+            function changeImage() {
+                var image= document.getElementById('myImage');
+                if(image.src.match('books')){
+                    image.src = "index gf.jpg";
+                 } else{
+                    image.src = "index.jpg";
+                 }
+
+            }
+        </script>
+    </body>
+</html>

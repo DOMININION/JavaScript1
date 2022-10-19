@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Break loop</title>
+    </head>
+<body>
+    <span><a href="index.html" style="margin-bottom: 50px ;">Back to Homepage</a></span>
+
+<p>A loop with a break.</p>
+
+<p id="demo"></p>
+
+<script>
+var text = "";
+var i;
+for (i = 0; i < 10; i++) {
+    if (i === 3) { break; }
+    text += "The number is " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+
+</html>

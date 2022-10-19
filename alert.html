@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hide method</title>
+
+</head>
+<body>
+    <span><a href="index.html" style="margin-bottom: 50px ;">Back to Homepage</a></span>
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Click me</button>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+</script>
+<script>
+    $(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+    </script>
+
+</body>
+</html>

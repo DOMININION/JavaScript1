@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> typeOf constructor</title>
+    </head>
+<body>
+    <span><a href="index.html" style="margin-bottom: 50px ;">Back to Homepage</a></span>
+
+<p>The constructor property returns the constructor function for a variable or an 
+object.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+    "john".constructor + "<br>" +
+    (3.14).constructor + "<br>" +
+    false.constructor + "<br>" +
+    [1,2,3,4].constructor + "<br>" +
+    {name:'john', age:34}.constructor + "<br>" +
+    new Date().constructor + "<br>" +
+    function () {}.constructor;
+</script>
+
+</body>
+</html>

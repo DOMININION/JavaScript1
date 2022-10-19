@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Continue loop</title>
+    </head>
+<body>
+    <span><a href="index.html" style="margin-bottom: 50px ;">Back to Homepage</a></span>
+
+<p>A loop which will skip the step where i = 3.</p>
+
+<p id="demo"></p>
+
+<script>
+var text = "";
+var i;
+for (i = 0; i < 10; i++) {
+    if (i === 3) { continue; }
+    text += "The number is " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
